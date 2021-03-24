@@ -35,7 +35,7 @@ public interface MiniList {
 	 * @param posicion - Posicion del objeto que se quiere eliminar en la lista.
 	 * @return true si se ha borrado y false en caso de que no.
 	 */
-	public boolean deletePosition(int posicion);
+	public boolean delete(int posicion);
 	
 	/**
 	 * Cambia el elemento que está en la posición que se pasa como parametro.
