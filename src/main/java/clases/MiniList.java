@@ -47,9 +47,10 @@ public interface MiniList {
 	
 	/**
 	 * Devuelve el elemento de la posición que se pasa como parámetro.
-	 * @return
+	 * @param posicion - Posicion del elemento que se quiere obtener.
+	 * @return devuelve el elemento de la posicion que pasamos como parametro.
 	 */
-	public Object get();
+	public Object get(int posicion);
 	
 	/**
 	 * Indica el numero de elementos que tiene la lista.
