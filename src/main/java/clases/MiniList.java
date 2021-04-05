@@ -23,7 +23,8 @@ public interface MiniList {
 	//public boolean contains(Object elemento);
 	
 	/**
-	 * Elimina el primer elemento que encuentre en la lista que sea igual 
+	 * Elimina el primer elemento que encuentre en la lis@Override
+	ta que sea igual 
 	 * al elemento que se pasa como parámetro.
 	 * @param elemento - Objeto que queremos eliminar.
 	 * @return true si se ha borrado y false en caso de que no.
@@ -51,15 +52,17 @@ public interface MiniList {
 	 * @return devuelve el elemento de la posicion que pasamos como parametro.
 	 */
 	Object get(int posicion);
+
+	void imprimir();
 	
 	/**
 	 * Indica el numero de elementos que tiene la lista.
 	 * @return numero de elementos que tiene la lista.
 	 */
-	//public int size();
+	public int size();
 	
 	/**
 	 * Pone la lista a 0 elementos.
 	 */
-	//public void clear();
+	public void clear();
 }
