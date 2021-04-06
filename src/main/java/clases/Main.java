@@ -7,16 +7,18 @@ public class Main {
     
     public static void main (String [] args) {
     	Persona person = new Persona(23, "Antonio", "56892450Z");
-    	Persona person2 = new Persona(23, "Antonio", "56892450Z");
+    	Persona person2 = new Persona(25, "Pepe", "85692450Z");
+    	Persona person3 = new Persona(32, "Juan", "23562450Z");
     	
     	MiniList lista = new MiLista();
     	
     	lista.add(person);
-    	//lista.add(person2);
+    	lista.add(person2);
+    	lista.add(person3);
     	
     	if (lista.get(0) == person) {
     		System.out.println("Son iguales");
-    	} else {
+    	}  else {
     		System.out.println("Son diferentes");
     	}
     	
@@ -25,6 +27,26 @@ public class Main {
     	} else {
     		System.out.println("Son diferentes");
     	}
+    	
+    	// Prueba del set.
+    	lista.set(1, person3);
+    	
+    	// Comprobamos que se ha cambiado correctamente.
+		if(lista.get(1) == person3) {
+			System.out.println("Cambio realizado");
+		}
+    	
+    	// Mostramos el tamaño de la lista.
+    	System.out.println(lista.size());
+    	
+    	// Prueba de borrado de un objeto de la lista (por posicion).
+    	lista.delete(2);
+    	
+    	// Prueba de borrado de un objeto de la lista (por objeto).
+    	lista.delete(person3);
+    	
+    	// Mostramos todos los objetos que tenemos en la lista.
+    	lista.imprimir();
 
     }
 }

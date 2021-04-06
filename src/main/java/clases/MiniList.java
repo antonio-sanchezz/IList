@@ -20,7 +20,7 @@ public interface MiniList {
 	 * @param elemento - Objeto que queremos buscar.
 	 * @return true si se encuentra en la lista y false en caso de que no.
 	 */
-	//public boolean contains(Object elemento);
+	boolean contains(Object elemento);
 	
 	/**
 	 * Elimina el primer elemento que encuentre en la lis@Override
@@ -29,14 +29,14 @@ public interface MiniList {
 	 * @param elemento - Objeto que queremos eliminar.
 	 * @return true si se ha borrado y false en caso de que no.
 	 */
-	//public boolean delete(Object elemento);
+	boolean delete(Object elemento);
 	
 	/**
 	 * Elimina el elemento que ocupe la posición que se indica como parámetro.
 	 * @param posicion - Posicion del objeto que se quiere eliminar en la lista.
 	 * @return true si se ha borrado y false en caso de que no.
 	 */
-	//public boolean delete(int posicion);
+	 boolean delete(int posicion);
 	
 	/**
 	 * Cambia el elemento que está en la posición que se pasa como parametro.
@@ -44,7 +44,7 @@ public interface MiniList {
 	 * @param elemento - Elemento que queremos introducir.
 	 * @return true si ha cambiado y false en caso de que no.
 	 */
-	//public boolean set(int posicion, Object elemento);
+	boolean set(int posicion, Object elemento);
 	
 	/**
 	 * Devuelve el elemento de la posición que se pasa como parámetro.
@@ -59,10 +59,10 @@ public interface MiniList {
 	 * Indica el numero de elementos que tiene la lista.
 	 * @return numero de elementos que tiene la lista.
 	 */
-	public int size();
+	int size();
 	
 	/**
 	 * Pone la lista a 0 elementos.
 	 */
-	public void clear();
+	void clear();
 }
